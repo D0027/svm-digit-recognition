@@ -22,6 +22,17 @@ Implement and understand **Support Vector Machines**: how they find the maximum-
 
 **Datasets:** small synthetic datasets (to *see* margins and kernels) and the **Digits dataset** built into scikit-learn: **1,797 images (8×8 pixels) → 64 features, 10 balanced classes**. No download needed; a copy is saved in `data/digits.csv`.
 
+## 🌐 Live Demo
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://svm-digit-recognition-027.streamlit.app)
+
+Pick a digit, edit pixels or upload an image and watch the SVM predict it, then tune `C` and `gamma` yourself.
+
+Run the app locally:
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
 ## ⚡ Highlights
 
 | | |
