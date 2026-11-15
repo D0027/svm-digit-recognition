@@ -157,7 +157,7 @@ def preprocess_upload(img: Image.Image, invert: bool):
         return np.zeros(64)
     a = a[ys.min(): ys.max() + 1, xs.min(): xs.max() + 1]  # crop to the digit
     h, w = a.shape
-    s = int(max(h, w) * 1.5)  # pad to square with a margin, like the dataset
+    s = int(max(h, w) * 1.05)  # pad to square with a margin, like the dataset
     canvas = np.zeros((s, s))
     canvas[(s - h) // 2: (s - h) // 2 + h, (s - w) // 2: (s - w) // 2 + w] = a
     small = Image.fromarray((canvas * 255).astype("uint8")).resize(
